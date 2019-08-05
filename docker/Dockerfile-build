@@ -1,0 +1,14 @@
+FROM alpine:3.10
+
+RUN apk update \
+    && apk upgrade \
+    && apk add bash \
+    && apk add git \    
+    && apk add nodejs=10.16.0-r0 \
+    && apk add npm=0.16.0-r0 \
+    && mkdir -p /tmp/build \
+    && mkdir -p /tmp/stage \
+    && mkdir -p /root/.ssh 
+
+# keep container alive forever for building
+CMD ["/bin/bash", "-c", " while true ; sleep 5; do continue ; done"]

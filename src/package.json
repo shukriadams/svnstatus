@@ -1,0 +1,19 @@
+{
+    "name": "svnstatus",
+    "version": "0.0.1",
+    "description": "HTTP SVN status check, in a docker container",
+    "private": false,
+    "author": "shukri.adams@gmail.com",
+    "license": "MIT",
+    "engines": {
+        "node": ">=0.10.x"
+    },
+    "scripts": {
+        "start": "node index"
+    },
+    "dependencies": {
+        "custom-env": "1.0.0",
+        "cross-spawn": "6.0.5"
+    },
+    "devDependencies": {}
+}
