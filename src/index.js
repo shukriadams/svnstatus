@@ -27,7 +27,7 @@ let server = http.createServer(async function (req, res) {
     }
     else {
         res.writeHead(200, {'Content-Type': 'text/plain'});
-        res.end('Use \\status \n');
+        res.end('Use /status \n');
     }
 
 });

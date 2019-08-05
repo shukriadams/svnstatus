@@ -4,6 +4,7 @@ RUN apk update \
     && apk upgrade \
     && apk add bash \
     && apk add nodejs=10.16.0-r0 \
+    && apk add npm=10.16.0-r0 \
     && apk add subversion=1.12.0-r0 \
     && mkdir -p /var/app \
     && adduser -D -u 1000 app \
