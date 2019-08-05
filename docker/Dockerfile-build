@@ -5,7 +5,7 @@ RUN apk update \
     && apk add bash \
     && apk add git \    
     && apk add nodejs=10.16.0-r0 \
-    && apk add npm=0.16.0-r0 \
+    && apk add npm=10.16.0-r0 \
     && mkdir -p /tmp/build \
     && mkdir -p /tmp/stage \
     && mkdir -p /root/.ssh 

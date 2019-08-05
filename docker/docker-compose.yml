@@ -4,5 +4,9 @@ services:
     image: shukriadams/svnstatus:latest
     container_name: svnstatus
     restart: unless-stopped
+    environment:
+      svnurl : not-set
+      svnuser : not-set
+      svnpassword : not-set
     ports:
     - "7101:3100"
